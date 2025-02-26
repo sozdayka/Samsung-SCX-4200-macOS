@@ -13,7 +13,7 @@
 *%
 *% 
 *% ===============================================
-*% PPD for Samsung SCX-4300 Series CUPS
+*% PPD for Samsung SCX-4200 Series CUPS
 *% For Macintosh Only
 *% ===============================================     
 *FileVersion:	"1.02.02"
@@ -24,16 +24,16 @@
 *APDialogExtension: "/Library/Printers/Samsung/PDEs/Graphic.bundle"
 *APDialogExtension: "/Library/Printers/Samsung/PDEs/Output.bundle"
 *APDialogExtension: "/Library/Printers/Samsung/PDEs/Printer.bundle"
-*%APPrinterLowInkTool: "/Library/Printers/Samsung/SCX-4300/InkTool"
+*%APPrinterLowInkTool: "/Library/Printers/Samsung/SCX-4200/InkTool"
 *Manufacturer:	"Samsung"
-*Product: "(Samsung SCX-4300 Series)"
+*Product: "(Samsung SCX-4200 Series)"
 *cupsVersion: 1.4
 *cupsManualCopies: True
 *cupsModelNumber: 0
 *cupsFilter:  "application/vnd.cups-raster 0 /Library/Printers/Samsung/Filters/rastertosec"
-*ModelName:     "Samsung SCX-4300 Series"
-*ShortNickName: "Samsung SCX-4300 Series"
-*NickName:      "Samsung SCX-4300 Series"
+*ModelName:     "Samsung SCX-4200 Series"
+*ShortNickName: "Samsung SCX-4200 Series"
+*NickName:      "Samsung SCX-4200 Series"
 *PSVersion:	"(3010.000) 550"
 *LanguageLevel:	"3"
 *ColorDevice:	False
@@ -66,10 +66,10 @@
 *% =========================================================
 *% Help file
 *% =========================================================
-*AboutHelpPath: "/Library/Printers/Samsung/SCX-4300/Help/English/About.html"
-*OutputHelpPath: "/Library/Printers/Samsung/SCX-4300/Help/English/Output.html"
-*PrinterHelpPath: "/Library/Printers/Samsung/SCX-4300/Help/English/Printer.html"
-*GraphicHelpPath: "/Library/Printers/Samsung/SCX-4300/Help/English/Graphic.html"
+*AboutHelpPath: "/Library/Printers/Samsung/SCX-4200/Help/English/About.html"
+*OutputHelpPath: "/Library/Printers/Samsung/SCX-4200/Help/English/Output.html"
+*PrinterHelpPath: "/Library/Printers/Samsung/SCX-4200/Help/English/Printer.html"
+*GraphicHelpPath: "/Library/Printers/Samsung/SCX-4200/Help/English/Graphic.html"
 
 *de.AboutHelpPath:   "/Library/Printers/Samsung/SCX-4500W/Help/German/About.html"
 *de.OutputHelpPath:  "/Library/Printers/Samsung/SCX-4500W/Help/German/Output.html"
@@ -185,10 +185,10 @@
 *% =========================================================
 *% Table names
 *% =========================================================
-*eGray1D600600:   "/Library/Printers/Samsung/SCX-4300/Gray1D_600"
-*eGrayHT600600:   "/Library/Printers/Samsung/SCX-4300/GrayHT_600"
-*eGray1D300300:   "/Library/Printers/Samsung/SCX-4300/Gray1D_600"
-*eGrayHT300300:   "/Library/Printers/Samsung/SCX-4300/GrayHT_600"
+*eGray1D600600:   "/Library/Printers/Samsung/SCX-4200/Gray1D_600"
+*eGrayHT600600:   "/Library/Printers/Samsung/SCX-4200/GrayHT_600"
+*eGray1D300300:   "/Library/Printers/Samsung/SCX-4200/Gray1D_600"
+*eGrayHT300300:   "/Library/Printers/Samsung/SCX-4200/GrayHT_600"
 
 *% =========================================================
 *%  Paper Handling
@@ -379,7 +379,7 @@
 *% End of "$Id: stcolor.ppd,v 1.8 2002/12/17 19:00:10 swdev Exp $".
 *%
 *% German localization
-*de.Translation ModelName/SCX-4300 Series: ""
+*de.Translation ModelName/SCX-4200 Series: ""
 *de.Translation InstallableOptions/Installed Options: ""
 *de.Translation AltitudeOption/Höhenkorrektur: ""
 *de.AltitudeOption Off/Aus: ""
@@ -449,7 +449,7 @@
 *de.Translation ColorModel/Farbmodus: ""
 *de.ColorModel Gray/Graustufen: ""
 *% Spanish localization
-*es.Translation ModelName/SCX-4300 Series: ""
+*es.Translation ModelName/SCX-4200 Series: ""
 *es.Translation InstallableOptions/Installed Options: ""
 *es.Translation AltitudeOption/Corrección para gran altitud: ""
 *es.AltitudeOption Off/Desactivado: ""
@@ -519,7 +519,7 @@
 *es.Translation ColorModel/Modo de color: ""
 *es.ColorModel Gray/Escala de grises: ""
 *% French localization
-*fr.Translation ModelName/SCX-4300 Series: ""
+*fr.Translation ModelName/SCX-4200 Series: ""
 *fr.Translation InstallableOptions/Installed Options: ""
 *fr.Translation AltitudeOption/Correction pour zones de haute altitude: ""
 *fr.AltitudeOption Off/Désactivé: ""
@@ -589,7 +589,7 @@
 *fr.Translation ColorModel/Mode Couleur: ""
 *fr.ColorModel Gray/Échelle de gris: ""
 *% Italian localization
-*it.Translation ModelName/SCX-4300 Series: ""
+*it.Translation ModelName/SCX-4200 Series: ""
 *it.Translation InstallableOptions/Installed Options: ""
 *it.Translation AltitudeOption/Correzione altitudine elevata: ""
 *it.AltitudeOption Off/Disattivato: ""
@@ -659,7 +659,7 @@
 *it.Translation ColorModel/Modalità colori: ""
 *it.ColorModel Gray/Scala di grigi: ""
 *% Korean localization
-*ko.Translation ModelName/SCX-4300 Series: ""
+*ko.Translation ModelName/SCX-4200 Series: ""
 *ko.Translation InstallableOptions/Installed Options: ""
 *ko.Translation AltitudeOption/고도보정: ""
 *ko.AltitudeOption Off/사용안함: ""
