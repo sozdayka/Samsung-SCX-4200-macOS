@@ -25,6 +25,9 @@
 *APDialogExtension: "/Library/Printers/Samsung/PDEs/Output.bundle"
 *APDialogExtension: "/Library/Printers/Samsung/PDEs/Printer.bundle"
 *%APPrinterLowInkTool: "/Library/Printers/Samsung/SCX-4200/InkTool"
+
+*APPrinterIconPath: "/Library/Printers/Samsung/Icons/SCX-4200.icns"
+
 *Manufacturer:	"Samsung"
 *Product: "(Samsung SCX-4200 Series)"
 *cupsVersion: 1.4

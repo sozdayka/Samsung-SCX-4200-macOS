@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-gui-script minSpecVersion="1">
+    <!-- Устанавливаем фоновое изображение окна -->
+    <!-- <background file="background.png" scaling="proportional" alignment="center"/> -->
+
+    <!-- Экран Welcome -->
+    <welcome file="welcome.html"/>
+
+    <!-- Можно добавить лицензию, вывод и т.д. -->
+    <!-- <license file="license.html"/> -->
+    <!-- <conclusion file="conclusion.html"/> -->
+
+    <!-- Описание пакетов -->
+    <pkg-ref id="com.sozdayka.samsung.scx4200.pkg"/>
+
+    <choices-outline>
+        <line choice="com.sozdayka.samsung.scx4200.pkg"/>
+    </choices-outline>
+
+    <choice id="com.sozdayka.samsung.scx4200.pkg" visible="true" title="Samsung SCX-4200 Driver">
+        <pkg-ref id="com.sozdayka.samsung.scx4200.pkg"/>
+    </choice>
+
+    <pkg-ref id="com.sozdayka.samsung.scx4200.pkg" version="1.0" onConclusion="none">
+        SamsungSCX4200Component.pkg
+    </pkg-ref>
+</installer-gui-script>

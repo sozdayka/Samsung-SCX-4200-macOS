@@ -1,3 +1,36 @@
+# #!/bin/bash
+# set -e  # Останавливаем скрипт при ошибках
+
+# PKG_ID="com.example.samsung.scx4200"
+# PKG_VERSION="1.0"
+# COMPONENT_PKG="SamsungSCX4200Component.pkg"
+
+# ROOT_DIR="Payload"
+# SCRIPTS_DIR="Scripts"
+
+# PPD_SOURCE="SCX-4200.ppd"                 # Исходный PPD
+# PPD_GZ_NAME="Samsung SCX-4200 Series.gz"  # Как назовём сжатый файл
+# PPD_TARGET_DIR="$ROOT_DIR/Library/Printers/PPDs/Contents/Resources"
+
+# echo "==> Сжимаем PPD..."
+# mkdir -p "$PPD_TARGET_DIR"
+# if [ -f "$PPD_SOURCE" ]; then
+#   gzip -c "$PPD_SOURCE" > "$PPD_TARGET_DIR/$PPD_GZ_NAME"
+# else
+#   echo "Ошибка: файл $PPD_SOURCE не найден!"
+#   exit 1
+# fi
+
+# echo "==> Собираем component-пакет $COMPONENT_PKG..."
+# pkgbuild \
+#   --root "$ROOT_DIR" \
+#   --scripts "$SCRIPTS_DIR" \
+#   --identifier "$PKG_ID" \
+#   --version "$PKG_VERSION" \
+#   "$COMPONENT_PKG"
+
+# echo "==> Успех: создан $COMPONENT_PKG"
+
 #!/bin/bash
 # Скрипт для подготовки структуры Payload, сжатия PPD-файла и сборки установочного пакета (PKG)
 # для принтера Samsung SCX-4200, используя структуру, близкую к официальным драйверам.
@@ -6,9 +39,10 @@ set -e  # Прерываем скрипт при ошибках
 
 ### 1. Настраиваем переменные проекта
 
-PKG_ID="com.example.samsung.scx4200"
+PKG_ID="com.sozdayka.samsung.scx4200"
 PKG_VERSION="1.0"
-PKG_NAME="SamsungSCX4200Installer.pkg"
+PKG_OUTPUT_DIR="Packages"
+PKG_NAME="SamsungSCX4200Component.pkg"
 
 ROOT_DIR="Payload"       # Папка, где хранится структура Library/... для установки
 SCRIPTS_DIR="Scripts"    # Папка со скриптами (postinstall)
@@ -133,7 +167,7 @@ pkgbuild \
   --scripts "$SCRIPTS_DIR" \
   --identifier "$PKG_ID" \
   --version "$PKG_VERSION" \
-  "$PKG_NAME"
+  "$PKG_OUTPUT_DIR/$PKG_NAME"
 
 if [ $? -eq 0 ]; then
   echo "Успех: пакет '$PKG_NAME' создан."
